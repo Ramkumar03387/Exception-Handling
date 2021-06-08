@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+import com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException;
+
+import java.util.Calendar.Builder;
+
+public class Test extends ExampleClass{
+	static int n = 0;
+	public static void main(String[] args) {
+		Test b = new Test();
+		b.test1();
+	}
+	private void test1() {
+		String arr[] = {"JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULI",
+				"AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"};
+		while(true) {
+			try {
+				System.out.println(RamKumar.arr[n]);	
+				n++;
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.out.println("index out of range");
+				break;
+			}
+		}
+	}
+}
